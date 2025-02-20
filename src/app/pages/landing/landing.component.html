@@ -1,4 +1,7 @@
 
+
+
+<p>bonjour bonour</p>
 <!-- Loader -->
 @if (isLoaded) {
   <div id="cr-overlay" class="w-full h-full fixed top-[0] right-[0] left-[0] bottom-[0] bg-[#fff] flex items-center justify-center z-[99]">
@@ -7,7 +10,7 @@
 }
 
 <div class="overflow-y-hidden">
-  <header-widget (setRubrique)="getRubriques($event)" (setSousRubrique)="getSousRubriques($event)"></header-widget>
+<!--  <header-widget (setRubrique)="getRubriques($event)" (setSousRubrique)="getSousRubriques($event)"></header-widget>-->
   @if (this.router.url!='/') {
     <section class="section-breadcrumb ">
       <div
@@ -21,12 +24,12 @@
                 <!--<h2
                   class="mb-[0] font-Manrope text-[19px] leading-[1] font-bold text-[#2b2b2d] max-[1199px]:text-[18px] max-[767px]:text-[17px] max-[575px]:mb-[5px] max-[575px]:text-[20px]">
                 </h2>-->
-                <span
-                  class="font-Poppins text-[14px] leading-[1.3] font-medium text-[#7a7a7a] capitalize max-[991px]:mt-[4px]">
-                     @if (rubriqueName) {
-                       <span class="font-semibold">{{rubriqueName?.slice(0, 80) + '...'}} : {{ sousRubriqueName?.slice(0, 80) + '...' }}</span>
-                     }
-                    </span>
+<!--                <span-->
+<!--                  class="font-Poppins text-[14px] leading-[1.3] font-medium text-[#7a7a7a] capitalize max-[991px]:mt-[4px]">-->
+<!--                     @if (rubriqueName) {-->
+<!--                       <span class="font-semibold">{{rubriqueName?.slice(0, 80) + '...'}} : {{ sousRubriqueName?.slice(0, 80) + '...' }}</span>-->
+<!--                     }-->
+<!--                    </span>-->
               </div>
             </div>
           </div>
