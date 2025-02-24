@@ -1,13 +1,17 @@
-import {Component, inject} from '@angular/core';
+import {Component, inject, OnInit} from '@angular/core';
 import {Router, RouterOutlet} from '@angular/router';
 import {Divider} from 'primeng/divider';
+import {ButtonDirective} from 'primeng/button';
+import {Ripple} from 'primeng/ripple';
 
 @Component({
   standalone:true,
   selector: 'app-landing',
   imports: [
     RouterOutlet,
-    Divider
+    Divider,
+    ButtonDirective,
+    Ripple
   ],
   templateUrl: './landing.component.html',
   styleUrl: './landing.component.scss'
@@ -15,7 +19,7 @@ import {Divider} from 'primeng/divider';
 export class LandingComponent implements OnInit{
   router: Router= inject(Router);
   isLoaded: boolean = false;
-  ngOnInit(){
+  ngOnInit():void {
     setTimeout(() => {
       this.isLoaded = false;
     },3000)
