@@ -21,5 +21,6 @@ export const appConfig: ApplicationConfig = {
       deps:[HttpClient]
     },
     defaultLanguage:'fr'
-  }), provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes)]
+  }), provideRouter(routes)
+    , provideZoneChangeDetection({ eventCoalescing: true })]
 };
